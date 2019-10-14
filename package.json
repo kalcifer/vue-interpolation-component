@@ -1,6 +1,6 @@
 {
   "name": "vue-interpolation-component",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "./dist/index.common.js",
   "module": "./dist/index.esm.js",
   "license": "MIT",
