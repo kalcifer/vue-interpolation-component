@@ -16,10 +16,12 @@ Install via npm:
 import Interpolation from 'vue-interpolation-component';
 ```
 
-default slot:
+### Default Slot
 
 ```html
-<Interpolation tag="p" content="test {slot} message">
+<Interpolation
+  content="test {slot} message"
+  tag="p">
   <a href="https://example.com">
     example website
   </a>
@@ -38,10 +40,12 @@ Output:
 </p>
 ```
 
-with named slot:
+### Named Slot:
 
 ```html
-<Interpolation tag="div" content="{hello} test {slot} message">
+<Interpolation
+  content="{hello} test {slot} message"
+  tag="div">
   <p slot="hello">hello slot</p>
   <a href="https://example.com">
     example website
@@ -62,10 +66,13 @@ Output:
 </div>
 ```
 
-with custom formatter:
+### With custom formatter:
 
 ```html
-<Interpolation content="test {{slot}} message" tag="p" regex="/{{(.*?)}}/g">
+<Interpolation
+  content="test {{slot}} message"
+  regex="/{{(.*?)}}/g"
+  tag="p">
   <a href="https://example.com">
     example website
   </a>
