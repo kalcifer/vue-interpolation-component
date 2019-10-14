@@ -1,10 +1,17 @@
 {
   "name": "vue-interpolation-component",
   "version": "0.1.0",
-  "main": "./src/main.js",
+  "main": "./dist/index.common.js",
+  "license": "MIT",
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.js",
+    "*.json"
+  ],
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name index ./src/main.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
