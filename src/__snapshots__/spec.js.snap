@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Interpolation renders content in the tag passed 1`] = `<span>test message</span>`;
+
+exports[`Interpolation renders the default slot 1`] = `<span>test message</span>`;
+
+exports[`Interpolation replaces any named & default slot 1`] = `<span>default slot test submit message</span>`;
+
+exports[`Interpolation replaces any named slot 1`] = `<span>test submit message</span>`;
+
+exports[`Interpolation replaces custom {{slot}} pattern when regex prop is passed 1`] = `<span>test double braces slot message</span>`;
+
+exports[`Interpolation replaces multiple {slot} pattern 1`] = `<span>submit test submit message submit</span>`;
+
+exports[`Interpolation replaces multiple named & default slots 1`] = `<span>default slot test submit message named</span>`;
+
+exports[`Interpolation replaces the {slot} pattern & sets extra props on root element 1`] = `<span aria-label="testing interpolation">test submit message</span>`;
+
+exports[`Interpolation replaces the {slot} pattern 1`] = `<span>test submit message</span>`;
