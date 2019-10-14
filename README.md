@@ -12,6 +12,10 @@ Install via npm:
 
 ## Usage
 
+```javascript
+import Interpolation from 'vue-interpolation-component';
+```
+
 default slot:
 
 ```html
