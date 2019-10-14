@@ -59,9 +59,7 @@
 //   </a>
 //   message
 // </p>
-import helper from "./helper";
-
-const { generateChildren } = helper;
+import { generateChildren } from "./helper";
 
 export default {
   name: "Interpolation",
