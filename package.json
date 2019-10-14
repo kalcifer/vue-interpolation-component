@@ -9,6 +9,7 @@
     "*.js",
     "*.json"
   ],
+  "repository": "https://github.com/kalcifer/vue-interpolation-component",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name index ./src/main.js",
