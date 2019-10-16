@@ -65,6 +65,20 @@ describe("Interpolation", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  it("replaces the {slot} pattern & sets classes on root element", () => {
+    const wrapper = shallowMount(Interpolation, {
+      propsData: {
+        content: "test {slot} message",
+        tag: "span",
+        class: "test class"
+      },
+      slots: {
+        default: "submit"
+      }
+    });
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it("replaces the {slot} pattern & sets extra props on root element", () => {
     const wrapper = shallowMount(Interpolation, {
       propsData: {

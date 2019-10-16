@@ -82,14 +82,11 @@ export default {
   },
   render(createElement, context) {
     const { data, props, slots } = context;
-    const { attrs } = data;
     const { content, tag, regex } = props;
 
     return createElement(
       tag,
-      {
-        attrs
-      },
+      data,
       generateChildren(
         regex,
         content,
